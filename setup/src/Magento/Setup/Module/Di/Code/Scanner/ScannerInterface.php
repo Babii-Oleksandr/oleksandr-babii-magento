@@ -6,7 +6,7 @@
 namespace Magento\Setup\Module\Di\Code\Scanner;
 
 /**
- * Interface \Magento\Setup\Module\Di\Code\Scanner\ScannerInterface
+ * Interface \Magento\Setup\ControllerDemos\Di\Code\Scanner\ScannerInterface
  *
  */
 interface ScannerInterface

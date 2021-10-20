@@ -16,7 +16,7 @@ class PhpTest extends TestCase
 {
     /**
      * @var \PHPUnit\Framework\MockObject\MockObject|
-     * \Magento\Setup\Module\I18n\Parser\Adapter\Php\Tokenizer\PhraseCollector
+     * \Magento\Setup\ControllerDemos\I18n\Parser\Adapter\Php\Tokenizer\PhraseCollector
      */
     protected $_phraseCollectorMock;
 
