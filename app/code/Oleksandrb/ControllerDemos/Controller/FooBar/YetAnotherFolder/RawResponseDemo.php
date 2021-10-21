@@ -42,8 +42,8 @@ class RawResponseDemo implements
                     <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/forwardresponsedemo">ForwardResponseDemo</a><br><br>
 
                     <form method="get" action="/oleksandrb-controllers-demo/foobar_yetanotherfolder/jsonresponsedemo">
-                        <input type="text" name="vendor_name"><br><br>
-                        <input type="text" name="module_name"><br><br>
+                        <input type="text" name="vendor_name" value="Oleksandrb"><br><br>
+                        <input type="text" name="module_name" value="ControllerDemos"><br><br>
                         <button type="submit">Отправить</button>
                     </form>
                 </body>
