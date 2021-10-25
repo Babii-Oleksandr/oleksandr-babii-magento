@@ -10,7 +10,7 @@ return [
         'consumers_wait_for_messages' => 1
     ],
     'crypt' => [
-        'key' => 'bc31f8320eac17a1733096373d03bb97'
+        'key' => '14a475b0b7ba4f074dbcf21123d0bb36'
     ],
     'db' => [
         'table_prefix' => 'm2_',
@@ -36,7 +36,7 @@ return [
         ]
     ],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'developer',
+    'MAGE_MODE' => 'production',
     'session' => [
         'save' => 'files'
     ],
@@ -81,6 +81,6 @@ return [
         'oleksandr-babii-magento.local'
     ],
     'install' => [
-        'date' => 'Sat, 09 Oct 2021 14:19:57 +0000'
+        'date' => 'Fri, 22 Oct 2021 10:09:01 +0000'
     ]
 ];

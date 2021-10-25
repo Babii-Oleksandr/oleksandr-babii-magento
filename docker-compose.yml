@@ -15,11 +15,11 @@ services:
     # In case you need your own Dockerfile. Dockerfile example:
     # ARG EXECUTION_ENVIRONMENT
     # FROM defaultvalue/php:7.3-${EXECUTION_ENVIRONMENT}
-#    build:
-#      context: .
-#      dockerfile: docker/Dockerfile
-#      args:
-#        - EXECUTION_ENVIRONMENT=${EXECUTION_ENVIRONMENT}
+    #    build:
+    #      context: .
+    #      dockerfile: docker/Dockerfile
+    #      args:
+    #        - EXECUTION_ENVIRONMENT=${EXECUTION_ENVIRONMENT}
     user: docker:docker
     sysctls:
       - net.ipv4.ip_unprivileged_port_start=0
@@ -45,8 +45,8 @@ services:
       # Required for xDebug on Linux hosts till docker.host.internal is not available by default - https://github.com/docker/libnetwork/pull/2348/files
       - "host.docker.internal:172.17.0.1"
     links:
-#      - memcached
-#      - redis
+      #      - memcached
+      #      - redis
       - elasticsearch
     external_links:
       - mysql80:mysql
@@ -67,40 +67,40 @@ services:
       # IMPORTANT! The below configuration is for Mac only to enable Docker Sync Stack. Don't commit!
       #- oleksandr-babii-magento-local-sync:/var/www/html:nocopy
 
-# IMPORTANT! The below volumes configuration is for Mac only to enable Docker Sync Stack. Don't commit!
-#volumes:
-#  oleksandr-babii-magento-local-sync:
-#    external: true
+  # IMPORTANT! The below volumes configuration is for Mac only to enable Docker Sync Stack. Don't commit!
+  #volumes:
+  #  oleksandr-babii-magento-local-sync:
+  #    external: true
 
-#  redis:
-#    image: redis:latest
-#    network_mode: bridge
-#    labels:
-#      - traefik.enable=false
-#    restart: always
+  #  redis:
+  #    image: redis:latest
+  #    network_mode: bridge
+  #    labels:
+  #      - traefik.enable=false
+  #    restart: always
 
-#  memcached:
-#    image: 'memcached:1.5'
-#    network_mode: bridge
-#    labels:
-#      - traefik.enable=false
-#    restart: always
+  #  memcached:
+  #    image: 'memcached:1.5'
+  #    network_mode: bridge
+  #    labels:
+  #      - traefik.enable=false
+  #    restart: always
 
-#  elasticsearch:
-#    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.11
-#    environment:
-#      - network.host=0.0.0.0
-#      - http.host=0.0.0.0
-#      - transport.host=127.0.0.1
-#      - xpack.security.enabled=false
-#      - indices.query.bool.max_clause_count=10240
-#      - ES_JAVA_OPTS=-Xms1024m -Xmx1024m
-#    ulimits:
-#      memlock:
-#        soft: -1
-#        hard: -1
-#    restart: always
-#    network_mode: bridge
+  #  elasticsearch:
+  #    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.11
+  #    environment:
+  #      - network.host=0.0.0.0
+  #      - http.host=0.0.0.0
+  #      - transport.host=127.0.0.1
+  #      - xpack.security.enabled=false
+  #      - indices.query.bool.max_clause_count=10240
+  #      - ES_JAVA_OPTS=-Xms1024m -Xmx1024m
+  #    ulimits:
+  #      memlock:
+  #        soft: -1
+  #        hard: -1
+  #    restart: always
+  #    network_mode: bridge
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.9.3
     environment:
