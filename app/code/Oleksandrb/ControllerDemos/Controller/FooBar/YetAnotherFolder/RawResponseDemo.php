@@ -37,10 +37,9 @@ class RawResponseDemo implements
                 <title>Module</title>
             </head>
                 <body>
-                    <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/jsonresponsedemo">JsonResponseDemo</a><br>
-                    <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/redirectresponsedemo">RedirectResponseDemo</a><br>
-                    <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/forwardresponsedemo">ForwardResponseDemo</a><br><br>
-
+                    <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/jsonresponsedemo/?vendor_name=Oleksandrb&module_name=ControllerDemos">JsonResponseDemo</a><br>
+                    <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/redirectresponsedemo" target="_blank">RedirectResponseDemo</a><br>
+                    <a href="/oleksandrb-controllers-demo/foobar_yetanotherfolder/forwardresponsedemo/?vendor_name=Oleksandrb&module_name=ControllerDemos">ForwardResponseDemo</a><br><br>
                     <form method="get" action="/oleksandrb-controllers-demo/foobar_yetanotherfolder/jsonresponsedemo">
                         <input type="text" name="vendor_name" value="Oleksandrb"><br><br>
                         <input type="text" name="module_name" value="ControllerDemos"><br><br>
