@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="1column"
+>
+    <body>
+        <referenceContainer name="content">
+            <container name="oleksandrb.layout.debug.container" htmlTag="div" htmlClass="oleksandrb-layout-debug">
+                <block class="Magento\Framework\View\Element\Template"
+                       name="oleksandrb.layout.debug.text.block.with.template"
+                       template="Oleksandrb_LayoutDebug::form.phtml">
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

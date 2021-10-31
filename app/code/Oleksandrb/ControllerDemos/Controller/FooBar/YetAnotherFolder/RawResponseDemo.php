@@ -47,8 +47,20 @@ class RawResponseDemo implements
                     </form>
                 </body>
         </html>
+
+            <arguments>
+                <argument name="text" translate="true" xsi:type="string"><![CDATA[DV.Campus!!!)) Text block demo]]></argument>
+            </arguments>
         HTML
             );
     }
 }
+
+/**
+ * Page result demo: https://oleksandr-babii-magento.local/oleksandrb-controllers-demo/foobar_yetanotherfolder/rawresponsedemo
+ *
+ * @return Raw
+ */
+
+
 
