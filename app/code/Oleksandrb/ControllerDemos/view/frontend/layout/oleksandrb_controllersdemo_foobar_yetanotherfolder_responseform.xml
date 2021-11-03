@@ -5,10 +5,10 @@
 >
     <body>
         <referenceContainer name="content">
-            <container name="oleksandrb.layout.debug.container" htmlTag="div" htmlClass="oleksandrb-layout-debug">
+            <container name="oleksandrb.controller.demos.container" htmlTag="div" htmlClass="oleksandrb-controller-demos">
                 <block class="Magento\Framework\View\Element\Template"
-                       name="oleksandrb.layout.debug.text.block.with.template"
-                       template="Oleksandrb_LayoutDebug::form.phtml">
+                       name="oleksandrb.controller.demos.text.block.with.template"
+                       template="Oleksandrb_ControllerDemos::demo.phtml">
                 </block>
             </container>
         </referenceContainer>

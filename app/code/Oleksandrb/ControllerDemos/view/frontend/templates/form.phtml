@@ -1,0 +1,14 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+
+<p><a href="<?= $block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/responseform', ['vendor_name' => 'Oleksandrb' , 'module_name' => 'ControllerDemos']) ?>">ResponseForm</a></p>
+<p><a href="<?= $block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/redirectresponsedemo') ?>" target="_blank">RedirectResponseDemo</a></p>
+<p><a href="<?= $block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/forwardresponsedemo', ['vendor_name' => 'Oleksandrb' , 'module_name' => 'ControllerDemos']) ?>">ForwardResponseDemo</a></p>
+
+<form method="get" action="<?= $block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/responseform') ?>">
+    <input type="text" name="vendor_name" value="Oleksandrb" style="width: 200px"><br><br>
+    <input type="text" name="module_name" value="ControllerDemos" style="width: 200px"><br><br>
+    <button type="submit">Отправить</button>
+</form>
+

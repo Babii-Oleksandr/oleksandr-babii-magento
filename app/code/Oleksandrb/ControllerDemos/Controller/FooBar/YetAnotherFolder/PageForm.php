@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Oleksandrb\LayoutDebug\Controller\Index;
+namespace Oleksandrb\ControllerDemos\Controller\FooBar\YetAnotherFolder;
 
 use Magento\Framework\View\Result\Page;
 
@@ -19,7 +19,7 @@ class PageForm implements \Magento\Framework\App\Action\HttpGetActionInterface
     }
 
     /**
-     * Page result demo: https://oleksandr-babii-magento.local/oleksandrb-layout-debug/index/pageform
+     * Page result: https://oleksandr-babii-magento.local/oleksandrb-controllers-demo/foobar_yetanotherfolder/pageform
      *
      * @return Page
      */
