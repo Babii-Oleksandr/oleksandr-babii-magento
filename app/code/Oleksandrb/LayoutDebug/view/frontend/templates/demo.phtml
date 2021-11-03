@@ -1,5 +1,5 @@
 <?php
 /** @var \Magento\Framework\View\Element\Template $block */
 ?>
-<?= $block->getRequest() ->getParams('vendor_name') ?>
-
+<p><?php echo $block->getRequest()->getParam('vendor_name'); ?></p>
+<p><?php echo $block->getRequest()->getParam('module_name'); ?></p>

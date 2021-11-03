@@ -29,6 +29,6 @@ class ForwardResponseDemo implements
     public function execute(): Forward
     {
         return $this->forwardFactory->create()
-            ->forward('jsonResponseDemo');
+            ->forward('oleksandrb_layout_debug/index/responseform');
     }
 }
