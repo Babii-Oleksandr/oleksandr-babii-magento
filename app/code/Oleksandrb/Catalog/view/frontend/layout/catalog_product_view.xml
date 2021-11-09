@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="1column"
+>
+
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="demo.product.block"
+                   template="Oleksandrb_Catalog::demo_product.phtml"
+                   after="-">
+
+                <arguments>
+                    <argument name="demo_text" xsi:type="string" translate="true">This is a demo product. You can add them to cart and place order only to test the Magento capabilities.
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

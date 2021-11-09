@@ -355,6 +355,8 @@ return [
         'Klarna_Onsitemessaging' => 1,
         'Klarna_KpGraphQl' => 1,
         'Mageplaza_Core' => 1,
+        'Oleksandrb_Catalog' => 1,
+        'Oleksandrb_Cms' => 1,
         'Oleksandrb_ControllerDemos' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
