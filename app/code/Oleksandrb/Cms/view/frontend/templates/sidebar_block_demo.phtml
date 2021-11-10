@@ -6,6 +6,5 @@
  */
 ?>
 
-<h3>MAGENTO</h3>
-<img src="<?php echo $this->getViewFileUrl('Oleksandrb_Cms::demo.jpg'); ?>" alt="image"/>
-
+<h3><?= $escaper->escapeHtml(__('Watches')) ?></h3>
+<img src="<?= $block->getViewFileUrl('Oleksandrb_Cms::demo.jpg') ?>" alt="image"/>

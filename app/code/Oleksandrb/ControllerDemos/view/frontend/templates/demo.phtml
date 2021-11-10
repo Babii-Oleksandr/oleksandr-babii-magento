@@ -1,5 +1,7 @@
 <?php
-/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ */
 ?>
-<p><?php echo $block->getRequest()->getParam('vendor_name'); ?></p>
-<p><?php echo $block->getRequest()->getParam('module_name'); ?></p>
+<p><?= $escaper->escapeHtml($block->getRequest()->getParam('vendor_name')) ?></p>
+<p><?= $escaper->escapeHtml($block->getRequest()->getParam('module_name')) ?></p>
