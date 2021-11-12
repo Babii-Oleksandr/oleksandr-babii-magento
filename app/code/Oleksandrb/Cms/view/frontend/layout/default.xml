@@ -5,14 +5,23 @@
 >
     <body>
         <referenceContainer name="page.wrapper">
-            <block class="Magento\Framework\View\Element\Template"
-                   name="demo.page.block"
-                   template="Oleksandrb_Cms::demo_block.phtml"
-                   before="-"
-            >
+            <block class="Magento\Cms\Block\BlockByIdentifier"
+                   name="page.demo.start.block"
+                    before="-">
+
                 <arguments>
-                    <argument name="demo_text_default" xsi:type="string" translate="true">This is a demo store by Oleksandrb for DV.Campus. Orders will not be accepted!
-                    </argument>
+                    <argument name="identifier" xsi:type="string">demo_start_block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="oleksandrb.cms.sidebar.demo.container">
+            <block class="Magento\Cms\Block\BlockByIdentifier"
+                   name="sidebar_block_demo"
+                   after="-">
+
+                <arguments>
+                    <argument name="identifier" xsi:type="string">sidebar_block_demo</argument>
                 </arguments>
             </block>
         </referenceContainer>

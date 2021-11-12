@@ -4,13 +4,13 @@
  */
 ?>
 
-<p><a href="<?= $escaper->escapeHtml($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/responseform', ['vendor_name' => 'Oleksandrb' , 'module_name' => 'ControllerDemos'])) ?>">ResponseForm</a></p>
-<p><a href="<?= $escaper->escapeHtml($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/redirectresponsedemo')) ?>" target="_blank">RedirectResponseDemo</a></p>
-<p><a href="<?= $escaper->escapeHtml($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/forwardresponsedemo', ['vendor_name' => 'Oleksandrb' , 'module_name' => 'ControllerDemos'])) ?>">ForwardResponseDemo</a></p>
+<p><a href="<?= $escaper->escapeHtmlAttr($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/responseform', ['vendor_name' => 'Oleksandrb' , 'module_name' => 'ControllerDemos'])) ?>">ResponseForm</a></p>
+<p><a href="<?= $escaper->escapeHtmlAttr($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/redirectresponsedemo')) ?>" target="_blank">RedirectResponseDemo</a></p>
+<p><a href="<?= $escaper->escapeHtmlAttr($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/forwardresponsedemo', ['vendor_name' => 'Oleksandrb' , 'module_name' => 'ControllerDemos'])) ?>">ForwardResponseDemo</a></p>
 
-<form method="get" action="<?= $escaper->escapeHtml($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/responseform')) ?>">
+<form method="get" action="<?= $escaper->escapeHtmlAttr($block->getUrl('oleksandrb_controllersdemo/foobar_yetanotherfolder/responseform')) ?>">
     <input type="text" name="vendor_name" value="Oleksandrb" style="width: 200px"><br><br>
     <input type="text" name="module_name" value="ControllerDemos" style="width: 200px"><br><br>
-    <button type="submit"><?= $escaper->escapeHtml(__('Отправить')) ?></button>
+    <button type="submit"><?= $escaper->escapeHtml(__('Submit')) ?></button>
 </form>
 

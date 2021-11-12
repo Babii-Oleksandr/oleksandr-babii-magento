@@ -3,16 +3,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd"
 >
 
-    <referenceContainer name="columns">
-        <container name="div.sidebar.demo" htmlTag="div" htmlClass="sidebar sidebar-demo" after="div.sidebar.additional">
-            <container name="sidebar.demo" as="sidebar_demo" label="Sidebar Demo"/>
-        </container>
-    </referenceContainer>
-
-    <referenceContainer name="sidebar.demo">
-        <block class="Magento\Framework\View\Element\Template"
-               name="sidebar.block.demo"
-               template="Oleksandrb_Cms::sidebar_block_demo.phtml">
-        </block>
+    <referenceContainer name="div.sidebar.additional">
+        <container name="oleksandrb.cms.sidebar.demo.container" htmlTag="div" htmlClass="oleksandrb-cms-sidebar-demo"/>
     </referenceContainer>
 </layout>
