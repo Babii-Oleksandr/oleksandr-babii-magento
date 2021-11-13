@@ -3,7 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd"
 >
 
-    <body>
         <referenceContainer name="oleksandrb.cms.sidebar.demo.container" remove="true"/>
-    </body>
+
 </layout>
