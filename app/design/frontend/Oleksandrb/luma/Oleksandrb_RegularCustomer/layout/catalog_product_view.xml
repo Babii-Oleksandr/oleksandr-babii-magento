@@ -3,8 +3,8 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
 >
     <body>
-        <move element="regular.customer.form" destination="oleksandrb-regular-customer-tab"/>
-        <referenceBlock name="form.title.block" remove="true"/>
+        <move element="oleksandrb.regular.customer.form" destination="oleksandrb-regular-customer-tab"/>
+        <referenceBlock name="oleksandrb.regular.customer.form.title.block" remove="true"/>
 
         <referenceBlock name="product.info.details">
             <block class="Magento\Framework\View\Element\Text\ListText"

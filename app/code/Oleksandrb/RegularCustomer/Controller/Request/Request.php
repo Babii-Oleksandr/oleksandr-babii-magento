@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Oleksandrb\RegularCustomer\Controller\Index;
+namespace Oleksandrb\RegularCustomer\Controller\Request;
 
 use Oleksandrb\RegularCustomer\Model\DiscountRequest;
 use Magento\Framework\App\Request\InvalidRequestException;
@@ -97,7 +97,6 @@ class Request implements
             $discountRequest->setProductId((int) $this->request->getParam('product_id'))
                 ->setName($this->request->getParam('name'))
                 ->setEmail($this->request->getParam('email'))
-                ->setAdminUserId($this->request->getParam(''))
                 ->setStoreId($this->storeManager->getStore()->getId());
 
             $this->discountRequestResource->save($discountRequest);
