@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="1column"
+>
+    <body>
+        <referenceContainer name="content">
+            <container name="oleksandrb.regular.customer.page.form" htmlTag="div" htmlClass="oleksandrb-regular-customer-page-form">
+                <block class="Magento\Framework\View\Element\Template"
+                       name="oleksandrb.regular.customer.form.title.block"
+                       template="Oleksandrb_RegularCustomer::catalog/product/view/discount/regular_customer_title_form.phtml"
+                >
+                </block>
+                <block class="Magento\Cms\Block\BlockByIdentifier"
+                       name="oleksandrb.regular.customer.get.discount.block"
+                >
+                    <arguments>
+                        <argument name="identifier" xsi:type="string">get_discount_block</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Template"
+                       name="oleksandrb.regular.customer.page.form.block"
+                       template="Oleksandrb_RegularCustomer::catalog/product/view/discount/regular_customer_request.phtml">
+                    <arguments>
+                        <argument name="cache_lifetime" xsi:type="number">84600</argument>
+                        <argument name="request_submit_url"
+                                  path="oleksandrb_regular_customer/request/request"
+                                  xsi:type="url"
+                        />
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

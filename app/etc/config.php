@@ -358,6 +358,7 @@ return [
         'Oleksandrb_Catalog' => 1,
         'Oleksandrb_Cms' => 1,
         'Oleksandrb_ControllerDemos' => 1,
+        'Oleksandrb_RegularCustomer' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1,
