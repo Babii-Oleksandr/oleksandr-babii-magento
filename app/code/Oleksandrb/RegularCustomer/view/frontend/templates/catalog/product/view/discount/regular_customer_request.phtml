@@ -40,10 +40,12 @@ $product = $block->getData('product');
             </div>
             <div class="actions-toolbar">
                 <div class="primary">
-                    <input type="hidden"
-                           name="product_id"
-                           value="<?= $escaper->escapeHtmlAttr((int) $product->getId()) ?>"
-                    />
+                    <?php if ($product):?>
+                        <input type="hidden"
+                               name="product_id"
+                               value="<?= $escaper->escapeHtmlAttr((int) $product->getId()) ?>"
+                        />
+                    <?php endif; ?>
                     <button type="submit"
                             title="<?= $escaper->escapeHtmlAttr(__('Send Request')) ?>"
                             class="action submit primary"

@@ -3,8 +3,8 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
 >
     <body>
-        <referenceContainer name="content">
-            <container name="oleksandrb.regular.customer.form" before="product.info.details">
+        <referenceContainer name="product.info.main">
+            <container name="oleksandrb.regular.customer.form">
                 <block class="Magento\Framework\View\Element\Template"
                        name="oleksandrb.regular.customer.form.title.block"
                        template="Oleksandrb_RegularCustomer::catalog/product/view/discount/regular_customer_title_form.phtml"
