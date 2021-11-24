@@ -11,5 +11,14 @@
                 </arguments>
             </block>
         </referenceBlock>
+        <referenceBlock name="header.links">
+            <block class="Magento\Framework\View\Element\Html\Link" name="custom-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">My Requests</argument>
+                    <argument name="path" xsi:type="string" translate="true">regular-customer/request/view/
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>
