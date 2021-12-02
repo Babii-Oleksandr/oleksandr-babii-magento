@@ -12,11 +12,11 @@
             </block>
         </referenceBlock>
         <referenceBlock name="top.links">
-            <block class="Magento\Framework\View\Element\Html\Link" name="custom-link">
+            <block class="Oleksandrb\RegularCustomer\Block\Account\SortTopLink" name="custom-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">My Requests</argument>
-                    <argument name="path" xsi:type="string" translate="true">regular-customer/request/viw/</argument>
-                    <argument name="sortOrder" xsi:type="number">80</argument>
+                    <argument name="path" xsi:type="string" translate="true">regular-customer/request/view/</argument>
+                    <argument name="sortOrder" xsi:type="number">60</argument>
                 </arguments>
             </block>
         </referenceBlock>
