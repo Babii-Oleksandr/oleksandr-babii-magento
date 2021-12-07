@@ -62,7 +62,7 @@ return [
     ],
     'cache_types' => [
         'config' => 1,
-        'layout' => 1,
+        'layout' => 0,
         'block_html' => 0,
         'collections' => 1,
         'reflection' => 1,
@@ -82,5 +82,41 @@ return [
     ],
     'install' => [
         'date' => 'Fri, 22 Oct 2021 10:09:01 +0000'
+    ],
+    'system' => [
+        'default' => [
+            'web' => [
+                'unsecure' => [
+                    'base_url' => 'https://oleksandrb-local.allbugs.info/',
+                    'base_link_url' => 'https://oleksandrb-local.allbugs.info/',
+                    'base_static_url' => 'https://oleksandrb-local.allbugs.info/static/',
+                    'base_media_url' => 'https://oleksandrb-local.allbugs.info/media/'
+                ],
+                'secure' => [
+                    'base_url' => 'https://oleksandrb-local.allbugs.info/',
+                    'base_link_url' => 'https://oleksandrb-local.allbugs.info/',
+                    'base_static_url' => 'https://oleksandrb-local.allbugs.info/static/',
+                    'base_media_url' => 'https://oleksandrb-local.allbugs.info/media/'
+                ]
+            ]
+        ],
+        'websites' => [
+            'us_website' => [
+                'web' => [
+                    'unsecure' => [
+                        'base_url' => 'https://oleksandrb-us.allbugs.info/',
+                        'base_link_url' => 'https://oleksandrb-us.allbugs.info/',
+                        'base_static_url' => 'https://oleksandrb-us.allbugs.info/static/',
+                        'base_media_url' => 'https://oleksandrb-us.allbugs.info/media/'
+                    ],
+                    'secure' => [
+                        'base_url' => 'https://oleksandrb-us.allbugs.info/',
+                        'base_link_url' => 'https://oleksandrb-us.allbugs.info/',
+                        'base_static_url' => 'https://oleksandrb-us.allbugs.info/static/',
+                        'base_media_url' => 'https://oleksandrb-us.allbugs.info/media/'
+                    ]
+                ]
+            ]
+        ]
     ]
 ];
