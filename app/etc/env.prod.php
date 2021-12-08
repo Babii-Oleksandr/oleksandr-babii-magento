@@ -62,8 +62,8 @@ return [
     ],
     'cache_types' => [
         'config' => 1,
-        'layout' => 0,
-        'block_html' => 0,
+        'layout' => 1,
+        'block_html' => 1,
         'collections' => 1,
         'reflection' => 1,
         'db_ddl' => 1,
@@ -72,7 +72,7 @@ return [
         'customer_notification' => 1,
         'config_integration' => 1,
         'config_integration_api' => 1,
-        'full_page' => 0,
+        'full_page' => 1,
         'config_webservice' => 1,
         'translate' => 1,
         'vertex' => 1
@@ -83,40 +83,4 @@ return [
     'install' => [
         'date' => 'Fri, 22 Oct 2021 10:09:01 +0000'
     ],
-    'system' => [
-        'default' => [
-            'web' => [
-                'unsecure' => [
-                    'base_url' => 'https://oleksandrb-local.allbugs.info/',
-                    'base_link_url' => 'https://oleksandrb-local.allbugs.info/',
-                    'base_static_url' => 'https://oleksandrb-local.allbugs.info/static/',
-                    'base_media_url' => 'https://oleksandrb-local.allbugs.info/media/'
-                ],
-                'secure' => [
-                    'base_url' => 'https://oleksandrb-local.allbugs.info/',
-                    'base_link_url' => 'https://oleksandrb-local.allbugs.info/',
-                    'base_static_url' => 'https://oleksandrb-local.allbugs.info/static/',
-                    'base_media_url' => 'https://oleksandrb-local.allbugs.info/media/'
-                ]
-            ]
-        ],
-        'websites' => [
-            'us_website' => [
-                'web' => [
-                    'unsecure' => [
-                        'base_url' => 'https://oleksandrb-us.allbugs.info/',
-                        'base_link_url' => 'https://oleksandrb-us.allbugs.info/',
-                        'base_static_url' => 'https://oleksandrb-us.allbugs.info/static/',
-                        'base_media_url' => 'https://oleksandrb-us.allbugs.info/media/'
-                    ],
-                    'secure' => [
-                        'base_url' => 'https://oleksandrb-us.allbugs.info/',
-                        'base_link_url' => 'https://oleksandrb-us.allbugs.info/',
-                        'base_static_url' => 'https://oleksandrb-us.allbugs.info/static/',
-                        'base_media_url' => 'https://oleksandrb-us.allbugs.info/media/'
-                    ]
-                ]
-            ]
-        ]
-    ]
 ];
