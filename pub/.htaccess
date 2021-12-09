@@ -122,10 +122,18 @@
     Options +FollowSymLinks
     RewriteEngine on
 
-	SetEnvIf Host .*oleksandr-babii-magento.local.* MAGE_RUN_CODE=default
-	SetEnvIf Host .*oleksandr-babii-magento.local.* MAGE_RUN_TYPE=store
-	SetEnvIf Host .*oleksandr-babii-magento.us.* MAGE_RUN_CODE=us_store_view
-	SetEnvIf Host .*oleksandr-babii-magento.us.* MAGE_RUN_TYPE=store
+    # Development
+    SetEnvIf Host .*oleksandrb-local.allbugs.info.* MAGE_RUN_CODE=default
+    SetEnvIf Host .*oleksandrb-local.allbugs.info.* MAGE_RUN_TYPE=store
+    SetEnvIf Host .*oleksandrb-us.allbugs.info.* MAGE_RUN_CODE=us_store_view
+    SetEnvIf Host .*oleksandrb-us.allbugs.info.* MAGE_RUN_TYPE=store
+
+    # Production
+    SetEnvIf Host .*oleksandr-babii-magento.local.* MAGE_RUN_CODE=default
+    SetEnvIf Host .*oleksandr-babii-magento.local.* MAGE_RUN_TYPE=store
+    SetEnvIf Host .*oleksandr-babii-magento.us.* MAGE_RUN_CODE=us_store_view
+    SetEnvIf Host .*oleksandr-babii-magento.us.* MAGE_RUN_TYPE=store
+
 ############################################
 ## You can put here your magento root folder
 ## path relative to web root
