@@ -94,10 +94,13 @@ class Request implements
         $discountRequest = $this->discountRequestFactory->create();
 
         try {
-            $discountRequest->setProductId((int) $this->request->getParam('product_id'))
+            $discountRequest
                 ->setName($this->request->getParam('name'))
                 ->setEmail($this->request->getParam('email'))
                 ->setStoreId($this->storeManager->getStore()->getId());
+            if ($this->request->getParam('product_id')){
+                $discountRequest->setProductId((int) $this->request->getParam('product_id'));
+            }
 
             $this->discountRequestResource->save($discountRequest);
             $this->messageManager->addSuccessMessage(
