@@ -1,6 +1,7 @@
 & when (@media-common = true) {
     .nav-sections-item-title.active {
         background: @color-sky-blue1;
+        font-weight: @font-weight__bold;
     }
     .navigation, .nav-sections {
         background: @color-sky-blue1;
@@ -8,26 +9,35 @@
     .nav-sections-item-title{
         background: @color-blue3;
         a, .alink {
-            color: @color-black;
+            color: @color-white;
         }
+    }
+    .navigation a,
+    .navigation .level0.has-active > a:not(.ui-state-active),
+    .nav-sections .header.links,
+    .nav-sections .header.links li > a {
+        color: @color-white;
     }
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-header .panel.wrapper {
         background-color:@color-blue3;
-        color: @color-black;
+        color: @color-white;
     }
     .nav-sections, .navigation {
         background-color:@color-sky-blue1;
     }
     .header.panel > .header.links > li {
         > a {
-            color: @color-black;
+            color: @color-white;
         }
 
         a:last-child {
-            color: @color-black;
+            color: @color-white;
         }
+    }
+    .navigation .level0 > .level-top {
+        color: @color-white;
     }
 }

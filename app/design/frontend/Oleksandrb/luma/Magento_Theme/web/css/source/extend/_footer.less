@@ -1,12 +1,12 @@
 .copyright {
     background-color:@color-blue3;
-    color: @color-black;
 }
 
 & when (@media-common = true) {
     .footer.content {
         .links > li {
             background-color: @color-sky-blue1;
+            font-weight: @font-weight__bold;
         }
     }
 }
@@ -16,4 +16,7 @@
         background-color:@color-sky-blue1;
     }
 }
+
+@footer-links-color: @color-white;
+@footer-links-color-hover: @color-white;
 
