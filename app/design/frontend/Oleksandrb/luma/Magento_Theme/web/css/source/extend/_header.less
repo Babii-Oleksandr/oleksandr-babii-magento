@@ -1,0 +1,33 @@
+& when (@media-common = true) {
+    .nav-sections-item-title.active {
+        background: @color-sky-blue1;
+    }
+    .navigation, .nav-sections {
+        background: @color-sky-blue1;
+    }
+    .nav-sections-item-title{
+        background: @color-blue3;
+        a, .alink {
+            color: @color-black;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-header .panel.wrapper {
+        background-color:@color-blue3;
+        color: @color-black;
+    }
+    .nav-sections, .navigation {
+        background-color:@color-sky-blue1;
+    }
+    .header.panel > .header.links > li {
+        > a {
+            color: @color-black;
+        }
+
+        a:last-child {
+            color: @color-black;
+        }
+    }
+}
