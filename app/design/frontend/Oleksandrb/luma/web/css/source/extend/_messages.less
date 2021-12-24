@@ -1,12 +1,29 @@
 @message-success__background: @color-blue3;
 @message-success__color:@color-white;
+@message-success-icon__color-inner: @color-white;
+@message-success-link__color: @color-white;
+@message-success-link__color-hover: @color-yellow-light2;
 
 @message-info__background:@color-sky-blue1;
 @message-info__color:@color-white;
+@message-info-link__color: @color-white;
+@message-info-link__color-hover: @color-gray20;
 
 @message-warning__background: #ffcccb;
+@message-warning__color:@color-red11;
+@message-warning-link__color: @color-red11;
+@message-warning-link__color-hover: @color-gray20;
 
 @message-error__background: @message-warning__background;
-.message.error {
-    font-weight: @font-weight__bold;
+@message-error-link__color: @color-red10;
+@message-error-link__color-hover: @color-gray20;
+
+& when (@media-common = true) {
+    .message.error {
+        font-weight: @font-weight__bold;
+    }
+    .message a {
+        text-decoration: underline;
+    }
 }
+

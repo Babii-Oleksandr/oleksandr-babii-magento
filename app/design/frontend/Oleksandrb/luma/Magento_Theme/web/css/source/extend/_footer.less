@@ -1,7 +1,3 @@
-.copyright {
-    background-color:@color-blue3;
-}
-
 & when (@media-common = true) {
     .footer.content {
         .links > li {
@@ -9,11 +5,18 @@
             font-weight: @font-weight__bold;
         }
     }
+    .copyright {
+        background-color:@color-blue3;
+    }
+
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .page-footer {
         background-color:@color-sky-blue1;
+        .newsletter h4 {
+            color: @color-white;
+        }
     }
 }
 

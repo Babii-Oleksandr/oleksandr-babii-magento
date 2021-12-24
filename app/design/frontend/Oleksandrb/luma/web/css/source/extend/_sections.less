@@ -1,7 +1,12 @@
-.product.data.items > .item.title.active > .switch {
-    font-weight: @font-weight__bold;
-}
+& when (@media-common = true) {
+    .data.switch .counter {
+        color: @color-white;
+    }
+    .product.data.items > .item.title.active > .switch {
+        font-weight: @font-weight__bold;
+    }
 
+}
 // MOBILE
 @accordion-control__background-color: @color-blue3;
 @accordion-control__color: @color-white;
@@ -16,6 +21,3 @@
 @tab-control__hover__background-color: @color-sky-blue1;
 @tab-control__active__background-color: @color-sky-blue1;
 @tab-control__active__color: @color-white;
-.data.switch .counter {
-    color: @color-white;
-}
