@@ -6,16 +6,20 @@
 
 @message-info__background:@color-sky-blue1;
 @message-info__color:@color-white;
+@message-info-icon__color-inner: @color-white;
 @message-info-link__color: @color-white;
 @message-info-link__color-hover: @color-gray20;
 
 @message-warning__background: #ffcccb;
 @message-warning__color:@color-red11;
+@message-warning-icon__color-inner: @color-red11;
 @message-warning-link__color: @color-red11;
 @message-warning-link__color-hover: @color-gray20;
 
 @message-error__background: @message-warning__background;
-@message-error-link__color: @color-red10;
+@message-error__color:@color-red11;
+@message-error-icon__color-inner: @color-red11;
+@message-error-link__color: @color-red11;
 @message-error-link__color-hover: @color-gray20;
 
 & when (@media-common = true) {
@@ -26,4 +30,3 @@
         text-decoration: underline;
     }
 }
-
